@@ -7,3 +7,4 @@ WORKDIR /data/plugins
 RUN wget https://repo1.maven.org/maven2/io/debezium/debezium-connector-postgres/1.5.0.Final/debezium-connector-postgres-1.5.0.Final-plugin.tar.gz
 RUN tar -xvf debezium-connector-postgres-1.5.0.Final-plugin.tar.gz && \
     rm -f *.gz
+COPY kafka-connect-http-5.4.1.jar kafka-connect-http-5.4.1.jar
